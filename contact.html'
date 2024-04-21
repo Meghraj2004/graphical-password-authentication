@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - 3-Errors</title>
+  <link rel="stylesheet" href=".css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="image.png" alt="Company Logo">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>This is a brief description of our company, 3-Errors. Feel free to add more information about your company here.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit orci vel eros bibendum tincidunt. Ut quis est nec sapien malesuada tristique.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 3-Errors. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

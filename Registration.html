@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Page</h2>
+    <form method="post" action="process.php">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        
+        <div class="imgdiv">
+        <label for="graphicalPassword">Select Your Sequnce for Graphical Password:</label>
+         <div id="imgset1" class="divs">
+        <img src="Images/dm.jpg" alt="" class="imgs" value="dairy Milk" onclick="display(this)">
+        <img src="Images/kk.jpeg" alt="" class="imgs" value="Kit Kat" onclick="display(this)">
+        <img src="Images/Perk.jpg" alt="" class="imgs" value="Perk" onclick="display(this)">
+        <img src="Images/star5.jpeg" alt="" class="imgs" value="5 Star" onclick="display(this)">
+        <img src="Images/gems.jpg" alt="" class="imgs" value="Gems" onclick="display(this)">
+         </div>
+         <div id="imgset2" class="divs">
+          <img src="Images/Perk.jpg" alt="" class="imgs" value="Perk" onclick="display(this)">
+          <img src="Images/kk.jpeg" alt="" class="imgs" value="Kit Kat" onclick="display(this)">
+         <img src="Images/star5.jpeg" alt="" class="imgs" value="5 Star" onclick="display(this)">
+         <img src="Images/gems.jpg" alt="" class="imgs" value="Gems" onclick="display(this)">
+          <img src="Images/dm.jpg" alt="" class="imgs" value="dairy Milk" onclick="display(this)">
+        </div>
+        <div id="imgset3" class="divs">
+          <img src="Images/star5.jpeg" alt="" class="imgs" value="5 Star" onclick="display(this)">
+           <img src="Images/gems.jpg" alt="" class="imgs" value="Gems" onclick="display(this)">
+            <img src="Images/dm.jpg" alt="" class="imgs" value="dairy Milk" onclick="display(this)">
+            <img src="Images/kk.jpeg" alt="" class="imgs" value="Kit Kat" onclick="display(this)">
+            <img src="Images/Perk.jpg" alt="" class="imgs" value="Perk" onclick="display(this)">
+         </div>
+        <br><br>
+        <div class="resetClass" style="margin-top:25%;margin-left: 43%;">
+            <input type="button" value="reset" onclick="reset1()">
+        </div>
+        <input type="text" id="listofseq" required>
+    </div>
+
+<script>
+    function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+    //alert("hi")
+    var r=getRandomInt(2,48);
+   // alert(r)
+    if(r>=15){
+        document.getElementById("imgset1").style.visibility="hidden"
+        document.getElementById("imgset2").style.visibility="hidden"
+        document.getElementById("imgset3").style.visibility="visible"
+    } if(r>=10){
+        document.getElementById("imgset1").style.visibility="hidden"
+        document.getElementById("imgset2").style.visibility="visible"
+        document.getElementById("imgset3").style.visibility="hidden"
+    }else{
+        document.getElementById("imgset1").style.visibility="visible"
+        document.getElementById("imgset2").style.visibility="hidden"
+        document.getElementById("imgset3").style.visibility="hidden"
+    }
+</script>
+
+        <button type="submit" onclick="finalbtn()">Register</button>
+        <input type="hidden" value="" name="gpa" id="hidden">
+    </form>
+</div>
+<script src="first.js"></script>
+</body>
+</html>

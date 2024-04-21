@@ -1,0 +1,107 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Vertically center align */
+}
+
+.logo img {
+    height: 100px; /* Increase size */
+    width: auto;
+    margin-left: 100px; /* Move logo image to the right */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav li.active a {
+    color: #ffcc00; /* Highlight active link */
+}
+
+/* Main Content */
+.main {
+    padding: 20px 0;
+}
+
+.contact {
+    padding: 20px; /* Decrease padding */
+    text-align: center; /* Center align content */
+    border: 2px solid black; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    background-color: white; /* Add background color */
+    max-width: 800px; /* Limit maximum width */
+    margin: 0 auto; /* Center the box horizontally */
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    margin-bottom: 20px;
+}
+
+.contact-info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional Styles */
+li {
+    list-style: none;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <form action="process1.php" method="post">
+        <div class="form-group">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="imgdivss">
+            <label for="graphicalPassword">Select Your Sequnce of Graphical Password:</label>
+             <div id="imgset1" class="divs">
+            <img src="Images/dm.jpg" alt="" class="imgs" value="dairy Milk" onclick="display(this)">
+            <img src="Images/kk.jpeg" alt="" class="imgs" value="Kit Kat" onclick="display(this)">
+            <img src="Images/Perk.jpg" alt="" class="imgs" value="Perk" onclick="display(this)">
+            <img src="Images/star5.jpeg" alt="" class="imgs" value="5 Star" onclick="display(this)">
+            <img src="Images/gems.jpg" alt="" class="imgs" value="Gems" onclick="display(this)">
+             </div>
+             <div id="imgset2" class="divs">
+              <img src="Images/Perk.jpg" alt="" class="imgs" value="Perk" onclick="display(this)">
+             <img src="Images/star5.jpeg" alt="" class="imgs" value="5 Star" onclick="display(this)">
+             <img src="Images/kk.jpeg" alt="" class="imgs" value="Kit Kat" onclick="display(this)">
+             <img src="Images/gems.jpg" alt="" class="imgs" value="Gems" onclick="display(this)">
+              <img src="Images/dm.jpg" alt="" class="imgs" value="dairy Milk" onclick="display(this)">
+            </div>
+            <div id="imgset3" class="divs">
+              <img src="Images/star5.jpeg" alt="" class="imgs" value="5 Star" onclick="display(this)">
+               <img src="Images/gems.jpg" alt="" class="imgs" value="Gems" onclick="display(this)">
+                <img src="Images/dm.jpg" alt="" class="imgs" value="dairy Milk" onclick="display(this)">
+                <img src="Images/kk.jpeg" alt="" class="imgs" value="Kit Kat" onclick="display(this)">
+                <img src="Images/Perk.jpg" alt="" class="imgs" value="Perk" onclick="display(this)">
+             </div>
+        
+            <input type="hidden" id="listofseq" style="margin-top: 100px;margin-bottom: 30px;">
+        </div>
+    
+    <script>
+        function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+        //alert("hi")
+        var r=getRandomInt(2,48);
+       // alert(r)
+        if(r>=23){
+            document.getElementById("imgset1").style.visibility="hidden"
+            document.getElementById("imgset2").style.visibility="hidden"
+            document.getElementById("imgset3").style.visibility="visible"
+        } if(r>=7){
+            document.getElementById("imgset1").style.visibility="hidden"
+            document.getElementById("imgset2").style.visibility="visible"
+            document.getElementById("imgset3").style.visibility="hidden"
+        }else{
+            document.getElementById("imgset1").style.visibility="visible"
+            document.getElementById("imgset2").style.visibility="hidden"
+            document.getElementById("imgset3").style.visibility="hidden"
+        }
+    </script>
+        <button type="submit" onclick="finalbtn()" style="margin-top: 100px;margin-bottom: 30px;">Login</button>
+        <input type="hidden" name="gpa" id="hidden" value="">
+    </form>
+    <p>Don't have an account? <a href="Registration.html">Register here</a>.</p>
+</div>
+<input type="hidden" name="gpa" id="hidden" value="">
+<script src="first.js"></script>
+
+</body>
+</html>

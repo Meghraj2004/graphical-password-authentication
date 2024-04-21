@@ -1,0 +1,133 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Vertically center align */
+  }
+  
+  .logo img {
+    height: 100px; /* Increase size */
+    width: auto;
+    margin-left: 100px; /* Move logo image to the right */
+  }
+  av ul {
+    list-style-type: none;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav li.active a {
+    color: #ffcc00; /* Highlight active link */
+  }
+  
+  /* Main Content */
+  .main {
+    padding: 20px 0;
+  }
+  
+  .hero {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .services h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .service {
+    margin-bottom: 30px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+  li {
+    list-style: none;
+  }
+
+  .about p {
+    font-size: 22px;
+    line-height: 1.6;
+    border: 2px solid black; /* Black border */
+    padding: 10px; /* Padding inside the box */
+    background-color: white;
+    border-radius: 10px; /* Curved edges */
+}
